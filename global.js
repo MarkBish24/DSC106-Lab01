@@ -14,8 +14,8 @@ function $$(selector, context = document) {
 // Step 3: automatic navigation menu
 let pages = [
   { url: '', title: 'Home' },
-  { url: 'projects/', title: 'Projects' },
   { url: 'resume/', title: 'Resume' },
+  { url: 'projects/', title: 'Projects' },
   { url: 'contacts/', title: 'Contact' },
   { url: 'https://github.com/MarkBish24', title: 'GitHub' },
 ];
@@ -38,9 +38,11 @@ for (let p of pages) {
   a.href = url;
   a.textContent = title;
 
+  // Treat "/resume/" and "/resume/index.html" as the same page
+  let currentPath = location.pathname.replace(/index\.html$/, '');
   a.classList.toggle(
     'current',
-    a.host === location.host && a.pathname === location.pathname,
+    a.host === location.host && a.pathname === currentPath,
   );
 
   if (a.host !== location.host) {

@@ -14,6 +14,7 @@ body {
 nav {
   --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
+  margin-top: 2.5rem; /* leave room for the theme switcher above */
   margin-bottom: 1em;
   border-bottom: 1px solid var(--border-color);
 }
@@ -45,7 +46,33 @@ nav a:hover {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   font-size: 80%;
+  color: color-mix(in oklch, canvastext, canvas 35%);
+
+  select {
+    padding: 0.3em 0.8em;
+    border: 1px solid oklch(50% 10% 200 / 40%);
+    border-radius: 999px;
+    background-color: canvas;
+    color: canvastext;
+    cursor: pointer;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+
+    &:hover {
+      border-color: var(--color-accent);
+      background-color: color-mix(in oklch, var(--color-accent), canvas 92%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+  }
 }
 
 /* Contact form */
@@ -125,6 +152,30 @@ main section {
     p {
       margin-top: 0;
       color: oklch(50% 3% 200);
+    }
+  }
+}
+
+/* Resume header */
+body > header {
+  text-align: center;
+  margin-block: 2em 3em;
+
+  h1 {
+    margin-block: 0 0.25em;
+  }
+
+  p {
+    margin-block: 0.25em;
+    color: oklch(50% 3% 200);
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
