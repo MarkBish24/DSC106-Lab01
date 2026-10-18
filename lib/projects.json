@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A responsive personal site built with HTML, CSS, and vanilla JavaScript, featuring an auto-generated nav bar, dark mode, and data-driven project pages."
+  },
+  {
+    "title": "Data Visualization Dashboard",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An interactive dashboard that visualizes public datasets with D3, including filtering, tooltips, and linked views."
+  },
+  {
+    "title": "Movie Recommendation System",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A collaborative-filtering recommender trained on movie ratings data, with an evaluation of accuracy across different similarity metrics."
+  },
+  {
+    "title": "Housing Price Prediction",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A regression pipeline using feature engineering and cross-validation to predict housing prices from neighborhood and property data."
+  },
+  {
+    "title": "Spotify Listening Analysis",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An exploratory analysis of personal listening history, uncovering trends in genres, artists, and listening times."
+  },
+  {
+    "title": "Task Manager App",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A full-stack to-do application with user accounts, drag-and-drop task ordering, and persistent storage."
+  },
+  {
+    "title": "Weather Forecast Widget",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A lightweight web widget that fetches live forecasts from a public weather API and displays them with simple icons."
+  },
+  {
+    "title": "Sentiment Analysis of Reviews",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A natural language processing project classifying product reviews as positive or negative using TF-IDF and logistic regression."
+  },
+  {
+    "title": "COVID-19 Trends Explorer",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An interactive map and time-series explorer of case and vaccination data across U.S. counties."
+  },
+  {
+    "title": "Sudoku Solver",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A backtracking-based Sudoku solver with a visual step-by-step mode that animates how the algorithm works."
+  },
+  {
+    "title": "Campus Event Finder",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A web app that aggregates student organization events into a searchable, filterable calendar."
+  },
+  {
+    "title": "Snake Game",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A classic Snake game built in JavaScript with the Canvas API, featuring increasing difficulty and a high-score tracker."
+  }
+]

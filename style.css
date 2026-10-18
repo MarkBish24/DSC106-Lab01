@@ -111,9 +111,38 @@ form {
     grid-row: span 3;
     gap: 1em;
 
-    h2 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 0;
     }
+  }
+}
+
+/* GitHub profile stats */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 1em;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 0.5em;
+  text-align: center;
+
+  dt {
+    grid-row: 1;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: oklch(50% 3% 200);
+  }
+
+  dd {
+    grid-row: 2;
+    margin: 0;
+    font-size: 200%;
+    font-weight: bold;
   }
 }
 
