@@ -147,11 +147,16 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const image =
       project.image ?? 'https://vis-society.github.io/labs/2/images/empty.svg';
     const description = project.description ?? '';
+    const year = project.year ?? '';
 
+    // Lab 5, Step 0.1: description and year share one grid cell
     article.innerHTML = `
       <${headingLevel}>${title}</${headingLevel}>
       <img src="${image}" alt="${title}">
-      <p>${description}</p>
+      <div>
+        <p>${description}</p>
+        <p class="project-year">c. ${year}</p>
+      </div>
     `;
 
     containerElement.appendChild(article);
