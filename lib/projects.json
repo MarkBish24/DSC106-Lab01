@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "images/bikewatching.jpg",
+    "url": "https://markbish24.github.io/bikewatching/",
+    "description": "An interactive Mapbox + D3 map of Boston-area Bluebikes traffic. Stations are sized by trip volume and colored by whether bikes mostly arrive or depart, with a time-of-day slider that reveals commuting patterns."
+  },
+  {
     "title": "Personal Portfolio Website",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",

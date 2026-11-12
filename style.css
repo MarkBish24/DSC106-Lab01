@@ -123,6 +123,24 @@ form {
       margin: 0;
     }
 
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    h2 a,
+    h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 0.5em;
+      font-weight: 600;
+    }
+
     .project-year {
       margin-top: 0.5em;
       color: oklch(55% 3% 200);
