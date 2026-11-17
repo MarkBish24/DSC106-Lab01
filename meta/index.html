@@ -12,18 +12,34 @@
     <h1>Meta</h1>
     <p>
       Stats about the code behind this website, computed from its git history.
-      Hover over a dot to see a commit, or drag a box over the chart to select
-      several commits.
+      Scroll through the story to watch the codebase grow, hover over a dot to
+      see a commit, or drag a box over the chart to select several commits.
     </p>
+
+    <div id="commit-filter">
+      <label>
+        Show commits until:
+        <input type="range" id="commit-progress" min="0" max="100" value="100" />
+        <time id="commit-time"></time>
+      </label>
+    </div>
 
     <h2>Summary</h2>
     <div id="stats"></div>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrolly-1">
+      <div id="scatter-story"></div>
+      <div id="scatter-plot">
+        <div id="chart"></div>
 
-    <p id="selection-count">No commits selected</p>
-    <dl id="language-breakdown" class="stats"></dl>
+        <p id="selection-count">No commits selected</p>
+        <dl id="language-breakdown" class="stats"></dl>
+      </div>
+    </div>
+
+    <h2>Files by size</h2>
+    <dl id="files"></dl>
 
     <dl id="commit-tooltip" class="info tooltip" hidden>
       <dt>Commit</dt>
@@ -35,7 +51,7 @@
       <dd id="commit-date"></dd>
 
       <dt>Time</dt>
-      <dd id="commit-time"></dd>
+      <dd id="commit-tooltip-time"></dd>
 
       <dt>Author</dt>
       <dd id="commit-author"></dd>
